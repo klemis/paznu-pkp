@@ -108,7 +108,7 @@
 	line-height: 24px;
 	height: 24px;
 	font-size: 12px;
-	color: #98c9ee;
+	color: #36304a;
 }
 
 .booking-form .form-checkbox input {
@@ -148,7 +148,7 @@
 	width: 0px;
 	height: 0px;
 	border-radius: 50%;
-	background-color: #4fa3e3;
+	background-color: #36304a;
 	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	-webkit-transition: 0.2s all;
@@ -167,7 +167,7 @@
 
 .booking-form .submit-btn {
 	color: #fff;
-	background-color: #4fa3e3;
+	background-color: #007dc1;
 	font-weight: 400;
 	height: 65px;
 	font-size: 18px;
@@ -184,7 +184,7 @@
 .booking-cta h1 {
 	font-size: 52px;
 	text-transform: uppercase;
-	color: #4fa3e3;
+	color: #36304a;
 	font-weight: 400;
 }
 

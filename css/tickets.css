@@ -25,7 +25,7 @@ body, html {
 }
 
 /* ------------------------------------ */
-a {
+.tickets-a {
 	margin: 0px;
 	transition: all 0.4s;
 	-webkit-transition: all 0.4s;
@@ -33,11 +33,11 @@ a {
   -moz-transition: all 0.4s;
 }
 
-a:focus {
+.tickets-a:focus {
 	outline: none !important;
 }
 
-a:hover {
+.tickets-a:hover {
 	text-decoration: none;
 }
 
@@ -46,7 +46,7 @@ h1,h2,h3,h4,h5,h6,h7,h8,h9,h10 {margin: 0px;}
 
 p {margin: 0px;}
 
-ul, li {
+.tickets-ul, .tickets-li {
 	margin: 0px;
 	list-style-type: none;
 }
@@ -374,7 +374,7 @@ body {
   position: relative;
 }
 
-ul li {
+.tickets-ul .tickets-li {
   float:left;
   width:199px;
   text-align:center;
