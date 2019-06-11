@@ -2,11 +2,10 @@
 
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
-
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
 
 @font-face {
-  font-family: OpenSans-Regular;
-  src: url('../fonts/OpenSans/OpenSans-Regular.ttf'); 
+  font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -21,7 +20,7 @@
 
 body, html {
 	height: 100%;
-	font-family: sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 /* ------------------------------------ */
@@ -149,6 +148,7 @@ table thead tr {
   height: 60px;
   background: #36304a;
 }
+
 table tbody tr {
   height: 50px;
 }
@@ -170,8 +170,10 @@ table td.r, table th.r {
 
 
 .table100-head th{
-  font-family: OpenSans-Regular;
-  font-size: 18px;
+  padding: 15px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
   color: #fff;
   line-height: 1.2;
   font-weight: unset;
@@ -180,7 +182,7 @@ table td.r, table th.r {
 
 
 tbody tr {
-  font-family: OpenSans-Regular;
+  font-family: 'Open Sans', sans-serif;
   font-size: 15px;
   color: #fffff;
   line-height: 1.2;
@@ -202,38 +204,75 @@ tbody tr:hover {
   font-size: 30px;
   border-radius: 10px;
   margin-bottom: 20px;  
-  font-family: OpenSans-Regular;
+  font-family: 'Open Sans', sans-serif;
   margin-left: auto;
   margin-right: auto;
 }
 
+.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{
+	font-family: 'Open Sans', sans-serif;
+	font-weight:500;
+	line-height:1.7;
+}
+
 .column1 {
   width: 260px;
-  padding-left: 60px;
+  padding: 10px;
+  text-align: center;
 }
 
 .column2 {
+  padding-left: 10px;
   width: 290px;
+  text-align: center;
 }
 
 .column3 {
   width: 245px;
+  padding-left: 10px;
+  text-align: center;
 }
 
 .column4 {
   width: 110px;
-  text-align: right;
+  padding-left: 10px;
+  text-align: center;
 }
 
 .column5 {
   width: 170px;
-  text-align: right;
+  padding-left: 10px;
+  text-align: center;
 }
 
 .column6 {
   width: 222px;
-  text-align: right;
-  padding-right: 40px;
+  padding-left: 10px;
+  text-align: center;
+}
+
+.column7 {
+  width: 170px;
+  padding-left: 10px;
+  text-align: center;
+}
+
+.column8 {
+  width: 170px;
+  padding-left: 10px;
+  text-align: center;
+}
+
+.column9 {
+  width: 170px;
+  padding-left: 10px;
+  text-align: center;
+}
+
+.column10 {
+  width: 170px;
+  padding-left: 10px;
+  text-align: center;
 }
 
 
@@ -259,7 +298,7 @@ tbody tr:hover {
     margin-bottom: 0;
   }
   table tbody tr td:before {
-    font-family: OpenSans-Regular;
+    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     color: #999999;
     line-height: 1.2;
@@ -351,7 +390,7 @@ body {
   @include filter-gradient(#5d4660, #f7eec7, vertical);
   $experimental-support-for-svg: true;
   @include background-image(linear-gradient(top, #5d4660    0%,#f7eec7 100%));
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .wrap {
@@ -408,7 +447,7 @@ body {
 margin-top:50px;
   p {
      font-size:13px;
-     font-family: 'Droid Serif', sans-serif;
+     font-family: 'Open Sans', sans-serif;
      padding:5px;
     span {
      font-weight:bold; 
@@ -448,7 +487,7 @@ margin-top:50px;
 /*-----------------------*/
 
 #booking {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	background-image: url('../img/background.jpg');
 	background-size: cover;
 	background-position: center;
@@ -490,12 +529,12 @@ margin-top:50px;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
-	font-family:Arial;
+	font-family:'Open Sans', sans-serif;
 	font-size:13px;
 	padding:6px 24px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #154682;
-	margin-top: 30px;
+	margin-top: 15px;
 }
 .myButton:hover {
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0061a7), color-stop(1, #007dc1));
