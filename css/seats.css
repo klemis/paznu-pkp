@@ -22,6 +22,7 @@
     overflow: hidden;
     text-align: center;
     border-bottom: 5px solid #d8d8d8;
+    z-index: -10;
   }
   .cockpit:before {
     content: "";
@@ -43,6 +44,7 @@
   .exit {
     position: relative;
     height: 50px;
+    border-top: 5px solid #d8d8d8;
   }
   .exit:before, .exit:after {
     content: "EXIT";
@@ -223,10 +225,28 @@
 	background-size: cover;
 	background-position: center;
     color: #191a1e;
+    height: 100%;
+    position: absolute;
+    width: 100%;
     /* opacity: 0.8; */
 }
 .proceed {
+  margin-top: 10%;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.box {
+  margin-top: 20%;
+  border-bottom: 5px solid #d8d8d8;
+  border-top: 5px solid #d8d8d8;
+  margin-top: 5%;
+  margin-left: 60%;
+  border-bottom: 5px solid #d8d8d8;
+  border-top: 5px solid #d8d8d8;
   position: absolute;
-  top: 100%;
-  left: 35%;
+  width: 285px;
+  background-color: rgb(0, 0, 0);
+    /* RGBa with 0.6 opacity */
+  background-color: rgba(0, 0, 0, 0.6);
 }
