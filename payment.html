@@ -17,9 +17,13 @@
 
         <!-- Custom stlylesheet -->
         <link type="text/css" rel="stylesheet" href="css/payment.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <link rel="stylesheet" href="css/navbar.css">
         <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+        <script src="js/form_validation.js" type="text/javascript"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -46,23 +50,31 @@
                 <div class="row">
                     <div class="col-50">
                     <h3>Adres</h3>
-                    <label for="fname"><i class="fa fa-user"></i> Imię i nazwisko</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Jan Kowalski">
+                    <div class="row">
+                        <div class="col-50">
+                            <label for="fname"><i class="fa fa-user"></i> Imię</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Jan" pattern= "^[A-Z][a-z]*$" required>
+                        </div>
+                        <div class="col-50">
+                            <label for="fname"><i class="fa fa-user"></i> Nazwisko</label>
+                            <input type="text" id="fname" name="lastname" placeholder="Kowalski" pattern= "^[A-Z][a-z]*$" required>
+                        </div>
+                    </div>
                     <label for="email"><i class="fa fa-envelope"></i> Email</label>
-                    <input type="text" id="email" name="email" placeholder="jan@example.com">
+                    <input type="text" id="email" name="email" placeholder="jan@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                     <label for="adr"><i class="fa fa-address-card-o"></i> Adres</label>
-                    <input type="text" id="adr" name="address" placeholder="Adama Mickiewicza 3/5">
+                    <input type="text" id="adr" name="address" placeholder="Adama Mickiewicza 3/5" pattern="([a-zA-Z0-9]| |/|\\|@|#|\$|%|&)+" required>
                     <label for="city"><i class="fa fa-institution"></i> Miasto</label>
-                    <input type="text" id="city" name="city" placeholder="Warszawa">
+                    <input type="text" id="city" name="city" placeholder="Warszawa" pattern= "^[A-Z][a-z]*$" required>
         
                     <div class="row">
                         <div class="col-50">
-                        <label for="state">Województwo</label>
-                        <input type="text" id="state" name="state" placeholder="Śląskie">
+                            <label for="state">Województwo</label>
+                            <input type="text" id="state" name="state" placeholder="Śląskie" pattern="^[A-Z][a-z]*$" required>
                         </div>
                         <div class="col-50">
-                        <label for="zip">Kod pocztowy</label>
-                        <input type="text" id="zip" name="zip" placeholder="42-200">
+                            <label for="zip">Kod pocztowy</label>
+                            <input type="text" id="zip" name="zip" placeholder="42-200" pattern="[0-9]{2}\-[0-9]{3}" required>
                         </div>
                     </div>
                     </div>
@@ -73,22 +85,25 @@
                     <div class="icon-container">
                         <i class="fa fa-cc-visa" style="color:navy;"></i>
                         <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                        <i class="fa fa-cc-cc-amex" style="color:red;"></i>
+                        <i class="fa fa-cc-discover" style="color:red;"></i>
                     </div>
                     <label for="cname">Właściciel karty</label>
-                    <input type="text" id="cname" name="cardname" placeholder="Jan Kowalski">
-                    <label for="ccnum">Numer karty</label>
-                    <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-                    <label for="expmonth">Miesiąc ważności karty</label>
-                    <input type="text" id="expmonth" name="expmonth" placeholder="Wrzesień">
-        
+                    <input type="text" id="cname" name="cardname" placeholder="Jan Kowalski" pattern="^[A-Z][a-z]*$" required>
                     <div class="row">
                         <div class="col-50">
-                        <label for="expyear">Rok ważności karty</label>
-                        <input type="text" id="expyear" name="expyear" placeholder="2020">
+                            <label for="ccnum">Numer karty</label>
+                            <input id="card_number" type="text" placeholder="1234-5678-9012-3456" pattern="\d{4}-?\d{4}-?\d{4}-?\d{4}" required>
                         </div>
                         <div class="col-50">
-                        <label for="cvv">CVV</label>
-                        <input type="text" id="cvv" name="cvv" placeholder="352">
+                            <label for="expmonth">Miesiąc/rok ważności karty</label>
+                            <input type="text" id="expmonth" name="expmonth" placeholder="04/23" pattern="([0-9]{2}[/]?){2}" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-50">
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" name="cvv" placeholder="352" pattern="/^[0-9]{3}$/" required>
                         </div>
                     </div>
                     </div>
